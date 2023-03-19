@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	lab2 "github.com/Illyakravchuk/lab_"
+	lab2 "github.com/roman-mazur/architecture-lab-2"
 )
 
 var (
