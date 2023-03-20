@@ -32,7 +32,7 @@ func (s *ComputeHandlerSuite) TestCompute(c *check.C) {
 		{
 			Input:  "invalid input",
 			Output: "",
-			Err:    errors.New("invalid syntax"),
+			Err:    errors.New("invalid expression"),
 		},
 	}
 
