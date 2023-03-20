@@ -30,7 +30,7 @@ go run main.go -f="test.txt"
 ```
 6. Command to input the calculation result into specific file:
 ```
-go run main.go -e="4 2 - " -o="result.txt
+go run main.go -e=""+ * 2 3 4" -o="result.txt
 ```
 7. Command to conduct testing:
 ```
