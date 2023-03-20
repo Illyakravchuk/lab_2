@@ -3,6 +3,6 @@
 ---
 ## Uninterapted iteration & testing automation
 > Team #12 - Transforming prefix expression into the infix one
----
+
 The main goal is to implement the uninterapted iteration and enhance basic skills of using dependencies' injection pattern, with an eye to simplify the overall testing process.
 ---
