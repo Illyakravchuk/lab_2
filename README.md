@@ -1,4 +1,5 @@
-Шаблон для 2-гої роботи з архітектури ПЗ
+# Software Architecture. 2nd Lab
+### *Created by: [Illya Kravchuk](https://github.com/Illyakravchuk) / [Dima Mudryk](https://github.com/TangiresH) / [Danylo Chohadze](https://github.com/GhostDolphin)*
 ---
-
-Використайте кнопку **"Use this template"**, щоб створити власний репозиторій.
+## Uninterapted iteration & and testing automation
+---
