@@ -1,9 +1,10 @@
 package lab2
+
 import (
-	. "gopkg.in/check.v1"
-	"testing"
 	"errors"
-	)
+	"testing"
+	. "gopkg.in/check.v1"
+)
 	
 	func Test(t *testing.T) { TestingT(t) }
 	
@@ -43,7 +44,7 @@ import (
 	
 	func (s *prefixToInfixSuite) TestComplexPrefixExpression(c *C) {
 	res, err := prefixToInfix("+ * / 12 3 3 5")
-	c.Assert(res, Equals, "12 / 3 * 3 + 5")
+	c.Assert(res, Equals, "(12 / 3) * 3 + 5")
 	c.Assert(err, IsNil)
 	}
 	
@@ -59,23 +60,23 @@ import (
 	c.Assert(err, IsNil)
 	
 	res, err = prefixToInfix("+ * 2 3 - 4 5")
-	c.Assert(res, Equals, "2 * 3 + (4 - 5)")
+	c.Assert(res, Equals, "2 * 3 + 4 - 5")
 	c.Assert(err, IsNil)
 	
 	res, err = prefixToInfix("+ * 2 / 6 2 - 4 5")
-	c.Assert(res, Equals, "2 * (6 / 2) + (4 - 5)")
+	c.Assert(res, Equals, "2 * (6 / 2) + 4 - 5")
 	c.Assert(err, IsNil)
 
 	res, err = prefixToInfix("+ * ^ 9 2 5 - 22 / 10 2")
-	c.Assert(res, Equals, "9 ^ 2 * 5 + (22 - (10 / 2))")
+	c.Assert(res, Equals, "(9 ^ 2) * 5 + 22 - 10 / 2")
 	c.Assert(err, IsNil)
 
 	res, err = prefixToInfix("- / * 5 8 2 + 10 2")
-	c.Assert(res, Equals, "(5 * 8) / 2 - (10 + 2)")
+	c.Assert(res, Equals, "(5 * 8) / 2 - 10 + 2")
 	c.Assert(err, IsNil)
 
 	res, err = prefixToInfix("+ - / * 6 2 12 2 * 3 2")
-	c.Assert(res, Equals, "6 * 2 / 12 - 2 + (3 * 2)")
+	c.Assert(res, Equals, "(6 * 2) / 12 - 2 + 3 * 2")
 	c.Assert(err, IsNil)
 
 	}
